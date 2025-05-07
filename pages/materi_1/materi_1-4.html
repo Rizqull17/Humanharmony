@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Human Harmony</title>
+  <link rel="icon" href="/assets/img/icon.png" type="image/gif" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link rel="stylesheet" href="../../assets/css/sidebar.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark green shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="../../assets/img/icon.png" style="width: 7%; height: 7%" /> Human
+        Harmony</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-3">
+            <a class="nav-link" href="../index.html">Beranda</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" aria-current="page" href="#">Materi</a>
+          </li>
+          <li class="nav-item me-3">
+            <button type="button" class="nav-link green" style="border: none" id="button-keluar">
+              Logout
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="siswa container-fluid mt-3 mb-4">
+    <div class="row">
+      <div class="col-md-3 mb-3 sidebar-siswa">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white green">
+          <span class="fs-5 mb-3">Human Harmony</span>
+          <hr />
+          <ul class="list-unstyled ps-0 scrollarea">
+            <li class="mb-1">
+              <button type="button" class="btn btn-toggle rounded" data-bs-toggle="collapse"
+                data-bs-target="#bab_1-collapse" aria-expanded="true">
+                Sistem Saraf Manusia
+              </button>
+              <div class="collapse show" id="bab_1-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a class="link-light rounded " href="/pages/materi_1/materi_1-1.html">Pengenalan sistem saraf
+                      manusia</a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" href="/pages/materi_1/materi_1-2.html">Neuron</a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" href="/pages/materi_1/materi_1-3.html">Sel Neoroglia</a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded active" href="/pages/materi_1/materi_1-4.html">Saraf Pusat</a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" href="/pages/materi_1/materi_1-5.html">Saraf Tepi</a>
+                  </li>
+                  <li><a class='link-light rounded' href='/pages/materi_1/uji-kompetensi1.html'>
+                      Uji Kompetensi 1</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button type="button" class="btn btn-toggle align-items-center rounded collapsed"
+                data-bs-toggle="collapse" data-bs-target="#bab_2-collapse" aria-expanded="false">
+                Organ Indra Manusia <i id="iconm2" class="p-1 fa fa-1,5x"></i>
+              </button>
+              <div class="collapse" id="bab_2-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a class="link-light rounded" id="materinext2_11" style="cursor: pointer;">Pendahuluan<i
+                        id="iconm2_11" class="p-1 fa"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" id="materinext2_1" style="cursor: pointer;">Peraba <i id="iconm2_1"
+                        class="p-1 fa"></i></a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" id="materinext2_2" style="cursor: pointer;">Pengecap <i id="iconm2_2"
+                        class="p-1 fa"></i></a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" id="materinext2_3" style="cursor: pointer;">Penciuman <i id="iconm2_3"
+                        class="p-1 fa"></i></a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" id="materinext2_4" style="cursor: pointer;">Penglihatan <i
+                        id="iconm2_4" class="p-1 fa"></i></a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" id="materinext2_5" style="cursor: pointer;">Pendengaran <i
+                        id="iconm2_5" class="p-1 fa"></i></a>
+                  </li>
+                  <li><a class='link-light rounded' id="ujikompetensi2" style="cursor: pointer;">
+                      Uji Kompetensi 2 <i id="iconm2_6" class="p-1 fa"></i></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button type="button" class="btn btn-toggle align-items-center rounded collapsed"
+                data-bs-toggle="collapse" data-bs-target="#bab_3-collapse" aria-expanded="false">
+                Sistem Hormon Manusia <i id="iconm3" class="p-1 fa fa-1,5x"></i>
+              </button>
+              <div class="collapse" id="bab_3-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a class="link-light rounded" id="materinext3_11" style="cursor: pointer;">Pendahuluan<i
+                        id="iconm3_11" class="p-1 fa"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" id="materinext3_1" style="cursor: pointer;">Sifat umum kelenjar
+                      endokrin <i id="iconm3_1" class="p-1 fa"></i></a>
+                    <a class="link-light rounded" id="ujikompetensi3" style="cursor: pointer;">Uji Kompetensi 3 <i
+                        id="iconm3_2" class="p-1 fa"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <a class="btn btn-evaluasi" class="link-light rounded" id="evaluasi" style="cursor: pointer;">Evaluasi
+                akhir <i id="iconevaluasi" class="p-1 fa fa-1,5x"></i></a>
+            </li>
+          </ul>
+          <hr />
+        </div>
+      </div>
+      <div class="col-md-9 materi">
+        <div class="card shadow">
+          <div class="card-body">
+            <h2>Sistem Saraf Pusat(SSP)</h2>
+
+            <div class="card">
+              <div class="card-header">
+                <b>Tujuan Pembelajaran</b>
+              </div>
+              <div class="card-body">
+                <ol>
+                  <li>
+                    Melalui kegiatan mengamati gambar atau model sistem saraf pusat, siswa dapat
+                    membandingkan
+                    struktur dan fungsi bagian-bagian utama sistem saraf pusat dengan benar.
+                  </li>
+                  <li>
+                    Setelah mengidentifikasi komponen sistem saraf pusat, siswa dapat menilai peran masing-masing bagian
+                    dalam mengatur dan mengoordinasi aktivitas tubuh secara tepat.
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <hr />
+            <div class="materi lh-lg ps-4 pe-4" id="TooltipContent">
+              <h5>A. Sel saraf pusat</h5>
+              <p class="rata"><b>Sistem saraf pusat</b> yang terdiri dari otak dan sumsum tulang
+                belakang (medula spinalis)
+                merupakan pusat seluruh kendali tubuh, baik kendali untuk gerak yang dilakukan secara sadar maupun tidak
+                sadar. Otak dan medula spinalis memiliki pelindung masing-masing yakni otak dilindungi tulang tengkorak
+                dan sumsum tulang belakang dilindungi oleh ruas-ruas tulang belakang, keduanya sama-sama dilindungi oleh
+                jaringan ikat yang disebut <a id="meninges" href="#" title="">meninges</a>
+              <div class="card">
+                <div class="card-header">
+                  <p class="rata">
+                    <b>Meninges</b> dibedakan menjadi 3 macam (gambar 5) yaitu duramater (lapisan paling
+                    luar, tebal, dan kuat), arachnoid (lapisan tengah), dan piamater (lapisan paling dalam, tipis,
+                    mengandung banyak pembuluh darah). Diantara piamater dan arachnoid terdapat ruang <a
+                      id="subarachnoid" href="#" title="">subarachnoid</a> yang berisi cairan <a id="serebrospinal"
+                      href="#" title="">serebrospinal</a>. Cairan
+                    ini berfungsi sebagai pelindung yang sifatnya meredam benturan
+                    yang mungkin terjadi pada otak (benturan antara otak dengan tulang kepala) dan pada sumsum tulang
+                    belakang (benturan antara sumsum tulang belakang dengan tulang belakang).
+                  </p>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="phone">
+                  <figure class="text-center">
+                    <img src="../../assets/img/gambar5.png" class="img-fluid rounded mx-auto d-block mb-4" />
+                    <figcaption>
+                      <b>Gambar 5.Penampang Anterior Frontal tengkorak</b>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="row komputer">
+                  <div class="col">
+                    <figure class="text-center">
+                      <img src="../../assets/img/gambar5.png" class="img-fluid rounded mx-auto d-block mb-4" />
+                      <figcaption><b>Gambar 5.Penampang Anterior Frontal tengkorak</b></figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <h5>1. Otak</h5>
+                <p class="rata" id="TooltipContent"><b>Orang dewasa</b> memiliki otak seberat ± 1.400 gram, ukurannya
+                  bervariasi dipengaruhi
+                  Oleh jenis kelamin, umur, dan ukuran fisik seseorang. Pada awal perkembangannya, <a id="vertebrata"
+                    href="#" title="">otak vertebrata</a>. terbagi atas 3 bagian, yaitu <a id="prosensefalon" href="#"
+                    title="">prosensefalon</a> (otak depan), <a id="mesensefalon" href="#" title="">mesensefalon</a>
+                  (otak tengah), dan <a id="rombensefalon" href="#" title="">rombensefalon</a> (otak belakang). Dalam
+                  perkembangan
+                  selanjutnya (pada manusia: embrio umur 5 minggu), prosensefalon terbagi
+                  menjadi telensefalon dan diensefalon, sedangkan rombensefalon terbagi menjadi mesensefalon dan
+                  mielensefalon, mesensefalon tetap tidak terbagi.</p>
+                <p class="rata" id="TooltipContent">Dari bagian-bagian otak tersebut berkembang struktur-struktur yang
+                  berbeda secara
+                  fungsional. Telensefalon membentuk serebrum (otak besar), diensefalon berkembang menjadi talamus dan
+                  hipotalamus, mesensefalon menjadi Otak Tengah, metensefalon menjadi pons dan serebelum (otak kecil),
+                  dan <a id="mielensefalon" href="#" title="">mielensefalon</a> menjadi <a id="medulaoblongata" href="#"
+                    title="">medula
+                    oblongata</a>(sumsum Ianjutan) (gambar 6).</p>
+                <div class="row komputer">
+                  <div class="col">
+                    <figure class="text-center">
+                      <img src="../../assets/img/gambar6.png" class="img-fluid rounded mx-auto d-block mb-4" />
+                      <figcaption>
+                        <b>Gambar 6.Penampang Sagital otak</b>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <h6>a). Otak besar (<i>Cerebrum</i>)</h6>
+                <p class="rata">
+                  <b>Cerebrum</b> terbagi menjadi dua belahan (<i>hemisfer</i>), yakni belah otak kanan dan belah otak
+                  kiri
+                  yang
+                  keduanya dihubungkan Oleh <a id="kalosum" href="#" title="">korpus kalosum</a> , pita tebal yang
+                  diperkirakan terdiri dari 300 juta akson
+                  dari sel saraf yang melintasi kedua belah otak. Bagian luar Cerebrum (korteks serebral) berwarna
+                  kelabu (karena terdapat banyak badan sel saraf atau perikarion yang kaya organel) yang disebut
+                  substansia
+                  kelabu, sedangkan bagian dalamnya berwarna putih (karena mengandung banyak akson berselubung mielin,
+                  yang mana selubung mielin merupakan <a id="derivat" href="#" title="">derivat lemak</a> dan berwarna
+                  putih) sehingga disebut <a id="substansia" href="#" title="">substansia putih</a>. Di dalam substansia
+                  putih, terdapat substansi kelabu yang disebut <a id="nuclei" href="#" title="">basal nuclei</a>.
+                </p>
+                <p class="rata">
+                  Perbedaan warna ini terjadi karena pada substansia kelabu tersusun atas badan badan sel dan dendrit,
+                  sedangkan substansia putih terdiri atas berkas serabut saraf yang bermielin (akson) dan warna putihnya
+                  dihasilkan dari adanya lipid yang menyusun mielin.
+                </p>
+                <p class="rata">
+                  <b>Cerebrum</b> memiliki empat lobus, yaitu: lobus oksipitalis, lobus temporalis, lobus parietalis,
+                  dan lobus
+                  frontalis (Tabel dibawah ini).
+                </p>
+                <center>
+
+                  <table class="table table-responsive table-bordered text-center" style="width: 70%;">
+                    <thead>
+                      <tr class="bg-primary text-white">
+                        <th style="width: 40%;">
+                          Lobus
+                        </th>
+                        <th>
+                          Peranan
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <b><i>Lobus Oksipitalis</i></b>
+                        </td>
+                        <td class="text-start">
+                          Pusat melihat;pusat bicara.
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td>
+                          <b><i>Lobus Temporalis</i></b>
+                        </td>
+                        <td class="text-start">
+                          Pusat pendengaran dan keseimbangan; pusat penciuman.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b><i>Lobus Parietalis</i></b>
+                        </td>
+                        <td class="text-start">
+                          Pusat perabaan untuk tekanan,getaran,rasa nyeri,suhu;pusat kecapan.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b><i>Lobus frontalis</i></b>
+                        </td>
+                        <td class="text-start">
+                          Pusat motoris; pusat pramotoris; pusat sensoris lapang pandang; pusat motoris bicara Broca
+                          (pembentukan kata-kata).
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </center>
+                <h6>b). Diensalafon </h6>
+                <p class="rata">
+                  <b>Diensefalon</b> terletak diantara belahan serebrum, diensefalon terdiri dari empat bagian yaitu
+                  hipotalamus, talamus, epitalamus, dan metatalamus. Hipotalamus berfungsi untuk homeostasis atau
+                  memelihara kestabilan lingkungan internal tubuh misalnya mengontrol suhu tubuh, mengontrol haus dan
+                  pengeluaran urine, mengontrol pengambilan makan, mengontrol sekresi hormon pituitari anterior, dll.
+                  Hipotalamus merupakan daerah otak yang terutama terlibat dalam regulasi langsung dari lingkungan
+                  internal tubuh, Contohnya apabila tubuh dingin, hipotalamus merespon dengan meningkatkan produksi
+                  panas dengan cara membuat tubuh menggigil.
+                </p>
+                <p class="rata">
+                  <b>Talamus</b> berfungsi menyalurkan impuls-impuls sensori yang penting ke bagian korteks
+                  somatosensori dan
+                  bagian Otak yang lain. Sedangkan pada epitalamus, terdapat badan pineal atau epifisis, yaitu suatu
+                  struktur dari neuroendokrin, dan pleksus koroid, kumpulan kapiler-kapiler yang berfungsi mensekresikan
+                  cairan serebrospinal.
+                </p>
+                <h6>c). Otak kecil (<i>Cerebelum</i>)</h6>
+                <p class="rata">
+                  <b>Permukaan cerebelum</b> pada mamalia termasuk manusia mengandung banyak lekukan (sulkus) dan
+                  gundukan
+                  (girus) untuk memperluas permukaannya. Serebelum merupakan pusat keseimbangan dan pusat koordinasi
+                  motoris. Cerebelum berperan dalam merencanakan dan memulai aktivitas sadar dengan memberikan input
+                  kepada daerah korteks motor serta terlibat dalam prosedur mengingat.
+                </p>
+                <h6>d). Otak Tengah (Mesensefalon/Midbrain)</h6>
+                <p class="rata">
+                  <b>Mesensefalon</b> merupakan pusat refleks bola mata dan refleks kepala dalam merespon stimuli visual
+                  dan
+                  suara, Mesensefalon bersama dengan medula oblongata, dan pons disebut sebagai batang otak.
+                </p>
+                <h6>e). Medula Oblongata</h6>
+                <p class="rata">
+                  <b>Medula oblongata</b> atau sumsum penghubung merupakan bagian otak paling posterior, berbentuk
+                  tabung
+                  silindris yang menghubungkan otak dengan medula spinalis. Medula oblongata berperan sebagai pusat
+                  pengendali denyut jantung, pernapasan, diameter arteriol, dan penelanan makanan. Fungsinya yang begitu
+                  vital menyebabkan seseorang dapat mengalami kematian apabila terdapat kerusakan pada medula oblongata.
+                </p>
+              </div>
+              <h5>2. Sumsum tulang belakang (medula spinalis)</h5>
+              <div class="card">
+                <div class="card-header">
+                  <p class="rata">
+                    <b>Medula spinalis</b> merupakan Ianjutan dari medula oblongata, diselaputi oleh meninges dan
+                    dibagian
+                    tengah dijumpai adanya cairan serebrospinal seperti pada otak. Medula spinalis berfungsi
+                    menghantarkan impuls saraf sensoris dari perifer ke otak dan menyampaikan impuls saraf motoris dari
+                    otak ke perifer, dan sebagai pusat refleks. Bagian luar medula spinalis berwarna putih (substansi
+                    putih), sedangkan bagian dalam berwarna abu-abu (substansi kelabu), dan berbentuk seperti huruf H
+                    (gambar 7).
+                  </p>
+                </div>
+              </div>
+              <div class="row komputer">
+                <div class="col">
+                  <figure class="text-center">
+                    <img src="../../assets/img/gambar7.png" class="img-fluid rounded mx-auto d-block mb-10 "
+                      height="600" width="600" />
+                    <figcaption>
+                      <b>Gambar 7. Penampang anterior dan melintang sumsum tulang belakang</b>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card latihan mt-3">
+          <h5 class="card-header">
+            Latihan
+            <a class="btn btn-warning text-white ms-2" data-bs-toggle="collapse" href="#collapsePetunjuk1" role="button"
+              aria-expanded="false" aria-controls="collapseExample">
+              <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                data-bs-title="klik untuk membuka/menutup petunjuk">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                Petunjuk Pengerjaan</span>
+            </a>
+          </h5>
+          <div class="card-body">
+            <div class="collapse show" id="collapsePetunjuk1">
+              <div class="card">
+                <h5 class="card-header">
+                  Petunjuk Mengerjakan Latihan
+                </h5>
+                <div class="card-body">
+                  <ol>
+                    <li>
+                      Jawablah soal-soal dibawah ini dengan
+                      menceklis jawaban yang benar pada jawaban yang tersedia.
+                    </li>
+                    <li>
+                      Tekan tombol cek jawaban untuk mencek jawaban.
+                    </li>
+                    <li>
+                      Apabila inputan berwana
+                      <b class="text-danger">Merah</b> jawaban salah,
+                      dan apabila berwana
+                      <b class="text-success">Hijau</b> jawaban benar.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <ol>
+              <li>
+                Apa saja bagian dari sistem saraf pusat?<br />
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Otak" id="answer14_11">
+                  <label class="form-check-label" for="answer14_11">
+                    Otak
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Sumsum tulang belakang" id="answer14_12">
+                  <label class="form-check-label" for="answer14_12">
+                    Sumsum tulang belakang
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Saraf kranial" id="answer14_13">
+                  <label class="form-check-label" for="answer14_13">
+                    Saraf kranial
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Saraf spinal" id="answer14_14">
+                  <label class="form-check-label" for="answer14_14">
+                    Saraf spinal
+                  </label>
+                </div>
+                <div id="hasil14_1"></div>
+              </li>
+              <li>
+                Lapisan meninges terdiri dari apa saja?<br />
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Duramater" id="answer14_21">
+                  <label class="form-check-label" for="answer14_21">
+                    Duramater
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Arachnoid" id="answer14_22">
+                  <label class="form-check-label" for="answer14_22">
+                    Arachnoid
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Piamater" id="answer14_23">
+                  <label class="form-check-label" for="answer14_23">
+                    Piamater
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Epitalamus" id="answer14_24">
+                  <label class="form-check-label" for="answer14_24">
+                    Epitalamus
+                  </label>
+                </div>
+                <div id="hasil14_2"></div>
+
+              </li>
+              <li>
+                Bagian otak yang berkembang dari prosensefalon?<br />
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Telensefalon" id="answer14_31">
+                  <label class="form-check-label" for="answer14_31">
+                    Telensefalon
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Diensefalon" id="answer14_32">
+                  <label class="form-check-label" for="answer14_32">
+                    Diensefalon
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Metensefalon" id="answer14_33">
+                  <label class="form-check-label" for="answer14_33">
+                    Metensefalon
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Mielensefalon" id="answer14_34">
+                  <label class="form-check-label" for="answer14_34">
+                    Mielensefalon
+                  </label>
+                </div>
+                <div id="hasil14_3"></div>
+              </li>
+              <li>
+                Bagian otak yang termasuk batang otak?<br />
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Mesensefalon" id="answer14_41">
+                  <label class="form-check-label" for="answer14_41">
+                    Mesensefalon
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Pons" id="answer14_42">
+                  <label class="form-check-label" for="answer14_42">
+                    Pons
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Medula oblongata" id="answer14_43">
+                  <label class="form-check-label" for="answer14_43">
+                    Medula oblongata
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Serebelum" id="answer14_44">
+                  <label class="form-check-label" for="answer14_44">
+                    Serebelum
+                  </label>
+                </div>
+                <div id="hasil14_4"></div>
+              </li>
+              <li>
+                Fungsi dari medula oblongata?<br />
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Mengendalikan denyut jantung" id="answer14_51">
+                  <label class="form-check-label" for="answer14_51">
+                    Mengendalikan denyut jantung
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Mengatur pernapasan" id="answer14_52">
+                  <label class="form-check-label" for="answer14_52">
+                    Mengatur pernapasan
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Mengontrol diameter arteriol" id="answer14_53">
+                  <label class="form-check-label" for="answer14_53">
+                    Mengontrol diameter arteriol
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Mengatur keseimbangan tubuh" id="answer14_54">
+                  <label class="form-check-label" for="answer14_54">
+                    Mengatur keseimbangan tubuh
+                  </label>
+                </div>
+                <div id="hasil14_5"></div>
+              </li>
+              <!-- <div id="hasil14"></div> -->
+              <button type="button" onclick="cekJawaban14()" class="btn btn-sm btn-outline-primary">
+                Cek Jawaban
+              </button>
+              <button type="button" onclick="ulangJawaban14()" class="btn btn-sm btn-outline-danger">
+                Ulang
+              </button>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-6">
+            <a class="btn btn-sm btn-outline-secondary shadow" href="/pages/materi_1/materi_1-3.html"><i
+                class="fa fa-arrow-left"></i> KEMBALI KE MATERI
+              SEBELUMNYA</a>
+          </div>
+          <div class="col-sm-6">
+            <a class="btn btn-sm btn-success shadow float-end" href="/pages/materi_1/materi_1-5.html">LANJUT KE MATERI
+              BERIKUTNYA
+              <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <button type="button" class="btn btn-lg rounded-circle" id="btn-back-to-top">
+          <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center pt-4 pb-4 green text-white">
+    © Muhammad Iman Rizqullah - Human Harmony
+  </footer>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="../../assets/javascript/penjelasan.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://kit.fontawesome.com/d3968fc237.js" crossorigin="anonymous"></script>
+  <script src="../../assets/javascript/latihan_materi1-2.js"></script>
+  <script type="module" src="../../assets/javascript/cek-login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="../../assets/javascript/tutorial.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+</body>
+
+</html>

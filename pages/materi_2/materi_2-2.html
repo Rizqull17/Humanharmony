@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Human Harmony</title>
+  <link rel="icon" href="../../assets/img/icon.png" type="image/gif" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link rel="stylesheet" href="../../assets/css/sidebar.css" />
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark green shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="../../assets/img/icon.png" style="width: 7%; height: 7%" /> Human
+        Harmony</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-3">
+            <a class="nav-link" href="/">Beranda</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" aria-current="page" href="#">Materi</a>
+          </li>
+          <li class="nav-item me-3">
+            <button type="button" class="nav-link green" style="border: none" id="button-keluar">
+              Logout
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="siswa container-fluid mt-3 mb-4">
+    <div class="row">
+      <div class="col-md-3 mb-3 sidebar-siswa">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white green">
+          <span class="fs-5 mb-3">Human Harmony</span>
+          <hr />
+          <ul class="list-unstyled ps-0 scrollarea">
+            <li class="mb-1">
+              <button type="button" class="btn btn-toggle rounded" data-bs-toggle="collapse"
+                data-bs-target="#bab_1-collapse" aria-expanded="true">
+                Sistem Saraf Manusia
+              </button>
+              <div class="collapse" id="bab_1-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a class="link-light rounded" href="/pages/materi_1/materi_1-1.html">Pengenalan sistem saraf
+                      manusia</a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" href="/pages/materi_1/materi_1-2.html">Neuron</a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" href="/pages/materi_1/materi_1-3.html">Sel Neoroglia</a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" href="/pages/materi_1/materi_1-4.html">Saraf Pusat</a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" href="/pages/materi_1/materi_1-5.html">Saraf Tepi</a>
+                  </li>
+                  <li><a class='link-light rounded' href='/pages/materi_1/uji-kompetensi1.html'>
+                      Uji Kompetensi 1</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button type="button" class="btn btn-toggle align-items-center rounded collapsed"
+                data-bs-toggle="collapse" data-bs-target="#bab_2-collapse" aria-expanded="false">
+                Organ Indra Manusia <i id="iconm2" class="p-1 fa fa-1,5x"></i>
+              </button>
+              <div class="collapse show" id="bab_2-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a class="link-light rounded" id="materinext2_11" style="cursor: pointer;">Pendahuluan<i
+                        id="iconm2_11" class="p-1 fa"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" id="materinext2_1" style="cursor: pointer;">Peraba <i id="iconm2_1"
+                        class="p-1 fa"></i></a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded active" id="materinext2_2" style="cursor: pointer;">Pengecap <i
+                        id="iconm2_2" class="p-1 fa"></i></a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" id="materinext2_3" style="cursor: pointer;">Penciuman <i id="iconm2_3"
+                        class="p-1 fa"></i></a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" id="materinext2_4" style="cursor: pointer;">Penglihatan <i
+                        id="iconm2_4" class="p-1 fa"></i></a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" id="materinext2_5" style="cursor: pointer;">Pendengaran <i
+                        id="iconm2_5" class="p-1 fa"></i></a>
+                  </li>
+                  <li><a class='link-light rounded' id="ujikompetensi2" style="cursor: pointer;">
+                      Uji Kompetensi 2 <i id="iconm2_6" class="p-1 fa"></i></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button type="button" class="btn btn-toggle align-items-center rounded collapsed"
+                data-bs-toggle="collapse" data-bs-target="#bab_3-collapse" aria-expanded="false">
+                Sistem Hormon Manusia <i id="iconm3" class="p-1 fa fa-1,5x"></i>
+              </button>
+              <div class="collapse" id="bab_3-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a class="link-light rounded" id="materinext3_11" style="cursor: pointer;">Pendahuluan<i
+                        id="iconm3_11" class="p-1 fa"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" id="materinext3_1" style="cursor: pointer;">Sifat umum kelenjar
+                      endokrin <i id="iconm3_1" class="p-1 fa"></i></a>
+                    <a class="link-light rounded" id="ujikompetensi3" style="cursor: pointer;">Uji Kompetensi 3 <i
+                        id="iconm3_2" class="p-1 fa"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <a class="btn btn-evaluasi" class="link-light rounded" id="evaluasi" style="cursor: pointer;">Evaluasi
+                akhir <i id="iconevaluasi" class="p-1 fa fa-1,5x"></i></a>
+            </li>
+          </ul>
+          <hr />
+        </div>
+      </div>
+      <div class="col-md-9 materi">
+        <div class="card shadow">
+          <div class="card-body">
+            <h2>Indra Pengecap</h2>
+
+            <div class="card">
+              <div class="card-header">
+                <b>Tujuan Pembelajaran</b>
+              </div>
+              <div class="card-body">
+                <ol>
+                  <li>
+                    Melalui kegiatan mengamati gambar atau model lidah dan indra pengecap, siswa dapat membandingkan
+                    jenis-jenis
+                    reseptor pengecap berdasarkan letak dan fungsinya dengan tepat.
+                  </li>
+                  <li>
+                    Setelah mengidentifikasi bagian-bagian lidah yang berperan dalam proses pengecapan, siswa dapat
+                    menilai peran masing-masing jenis pengecap dalam mengenali rasa secara benar.
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <hr />
+            <div class="materi lh-lg ps-4 pe-4">
+              <h5>A. Indra Pengecap</h5>
+              <p class="rata">Indra pengecap berperan dalam menerima rangsangan kimiawi rasa utama yakni asam, manis,
+                pahit, asin, dan gurih. Rasa gurih muncul dari reseptor rasa yang dirangsang menggunakan Monosodium
+                Glutamat (MSG), zat alami yang terdapat pada makanan, dan bahan tambahan. Rasa yang muncul selain rasa
+                utama, seperti cokelat, merica, dan kopi merupakan kombinasi dari lima rasa utama ditambah sensasi
+                penciuman dan sentuhan. </p>
+              <div class="card">
+                <div class="card-header">
+                  <p class="rata">
+                    Reseptor sensasi rasa terletak di indra pengecap yakni paling banyak terkumpul di lidah, beberapa
+                    Iainnya di bagian posterior atap mulut, faring, dan epiglotis. Bagian yang peka terhadap rasa adalah
+                    kuncup pengecap. Setiap kuncup pengecap berbentuk oval yang terdiri dari tiga jenis sel epitel: sel
+                    pengecap atau sel reseptor gustatori, sel pendukung, dan sel basal (Gambar gambar dibawah). Jumlah
+                    kuncup pengecap dapat menurun seiring bertambahnya usia.
+                  </p>
+                </div>
+              </div>
+              <p class="rata">Masing-masing sel pengecap dilengkapi dengan silia yang memanjang ke lubang halus (porus)
+                di permukaan kuncup. Sekitar 50 sel pengecap di masing masing kuncup pengecap pada lidah dikelilingi
+                oleh satu sel pendukung. Sedangkan sel basale merupakan sel induk yang ditemukan dekat dengan jaringan
+                ikatt menghasilkan sel pendukung yang kemudian akan berkembang menjadi sel pengecap</p>
+              <p class="rata">
+                Kuncup pengecap dapat tersebar atau berkelompok dalam tonjolan-tonjolan epitel yang disebut papila, yang
+                memberikan tekstur kasar pada permukaan atas lidah. Terdapat tiga jenis papila yang mengandung kuncup
+                pengecap:
+              <ol>
+                <li>
+                  Papila circumvalate, membentuk baris berbentuk V terbalik di belakang lidah. Setiap papila ini
+                  menampung 100-300 kuncup pengecap
+                </li>
+                <li>
+                  Papila fungiformis, berbentuk seperti jamur, tersebar di seluruh permukaan lidah, Setiap papila ini
+                  mengandung sekitar lima kuncup pengecap.
+                </li>
+                <li>
+                  Papila foliate, berbentuk seperti daun, terletak di tepi lateral lidah, tetapi sebagian besar
+                  mengalami degenerasi ketika anak-anak
+                </li>
+              </ol>
+              </p>
+              <p class="rata">Seluruh permukaan lidah memiliki filiform papila (papila berbentuk seperti benang).
+                Filiform papila mengandung reseptor taktil, tanpa kuncup pengecap. Filiform papila meningkatkan gesekan
+                antara lidah dan makanant sehingga memudahkan lidah memindahkan makanan di rongga mulut. Kuncup pengecap
+                pada semua vertebrata mendapat persarafan dari cabang-cabang saraf kranial nomor VII, IX, dan X.</p>
+              <div class="row komputer">
+                <div class="col">
+                  <img src="../../assets/img/gambar11.png" class="img-fluid rounded mx-auto d-block mb-4" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card latihan mt-3">
+          <h5 class="card-header">
+            Latihan
+            <a class="btn btn-warning text-white ms-2" data-bs-toggle="collapse" href="#collapsePetunjuk1" role="button"
+              aria-expanded="false" aria-controls="collapseExample">
+              <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                data-bs-title="klik untuk membuka/menutup petunjuk">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                Petunjuk Pengerjaan</span>
+            </a>
+          </h5>
+          <div class="card-body">
+            <div class="collapse show" id="collapsePetunjuk1">
+              <div class="card">
+                <h5 class="card-header">
+                  Petunjuk Mengerjakan Latihan
+                </h5>
+                <div class="card-body">
+                  <ol>
+                    <li>
+                      Jawablah soal-soal dibawah ini dengan
+                      menceklis jawaban yang benar pada jawaban yang tersedia.
+                    </li>
+                    <li>
+                      Tekan tombol cek jawaban untuk mencek jawaban.
+                    </li>
+                    <li>
+                      Apabila inputan berwana
+                      <b class="text-danger">Merah</b> jawaban salah,
+                      dan apabila berwana
+                      <b class="text-success">Hijau</b> jawaban benar.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <ol>
+              <li>
+                Jenis rasa utama yang diterima oleh indra pengecap:<br />
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Asam" id="answer22_11">
+                  <label class="form-check-label" for="answer22_11">
+                    Asam
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Manis" id="answer22_12">
+                  <label class="form-check-label" for="answer22_12">
+                    Manis
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Pahit" id="answer22_13">
+                  <label class="form-check-label" for="answer22_13">
+                    Pahit
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Asin" id="answer22_14">
+                  <label class="form-check-label" for="answer22_14">
+                    Asin
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Gurih" id="answer22_15">
+                  <label class="form-check-label" for="answer22_15">
+                    Gurih
+                  </label>
+                </div>
+                <div id="hasil22_1"></div>
+              </li>
+              <li>
+                Lapisan meninges terdiri dari apa saja?<br />
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Duramater" id="answer22_21">
+                  <label class="form-check-label" for="answer22_21">
+                    Duramater
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Arachnoid" id="answer22_22">
+                  <label class="form-check-label" for="answer22_22">
+                    Arachnoid
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Piamater" id="answer22_23">
+                  <label class="form-check-label" for="answer22_23">
+                    Piamater
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Epitalamus" id="answer22_24">
+                  <label class="form-check-label" for="answer22_24">
+                    Epitalamus
+                  </label>
+                </div>
+                <div id="hasil22_2"></div>
+
+              </li>
+              <li>
+                Bagian otak yang berkembang dari prosensefalon?<br />
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Telensefalon" id="answer22_31">
+                  <label class="form-check-label" for="answer22_31">
+                    Telensefalon
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Diensefalon" id="answer22_32">
+                  <label class="form-check-label" for="answer22_32">
+                    Diensefalon
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Metensefalon" id="answer22_33">
+                  <label class="form-check-label" for="answer22_33">
+                    Metensefalon
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Mielensefalon" id="answer22_34">
+                  <label class="form-check-label" for="answer22_34">
+                    Mielensefalon
+                  </label>
+                </div>
+                <div id="hasil22_3"></div>
+              </li>
+              <li>
+                Bagian otak yang termasuk batang otak?<br />
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Mesensefalon" id="answer22_41">
+                  <label class="form-check-label" for="answer22_41">
+                    Mesensefalon
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Pons" id="answer22_42">
+                  <label class="form-check-label" for="answer22_42">
+                    Pons
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Medula oblongata" id="answer22_43">
+                  <label class="form-check-label" for="answer22_43">
+                    Medula oblongata
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Serebelum" id="answer22_44">
+                  <label class="form-check-label" for="answer22_44">
+                    Serebelum
+                  </label>
+                </div>
+                <div id="hasil22_4"></div>
+              </li>
+              <li>
+                Fungsi dari medula oblongata?<br />
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Mengendalikan denyut jantung" id="answer22_51">
+                  <label class="form-check-label" for="answer22_51">
+                    Mengendalikan denyut jantung
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Mengatur pernapasan" id="answer22_52">
+                  <label class="form-check-label" for="answer22_52">
+                    Mengatur pernapasan
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Mengontrol diameter arteriol" id="answer22_53">
+                  <label class="form-check-label" for="answer22_53">
+                    Mengontrol diameter arteriol
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Mengatur keseimbangan tubuh" id="answer22_54">
+                  <label class="form-check-label" for="answer22_54">
+                    Mengatur keseimbangan tubuh
+                  </label>
+                </div>
+                <div id="hasil22_5"></div>
+              </li>
+              <!-- <div id="hasil22"></div> -->
+              <button type="button" onclick="cekJawaban22()" class="btn btn-sm btn-outline-primary">
+                Cek Jawaban
+              </button>
+              <button type="button" onclick="ulangJawaban22()" class="btn btn-sm btn-outline-danger">
+                Ulang
+              </button>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-6">
+            <a class="btn btn-sm btn-outline-secondary shadow" href="/pages/materi_2/materi_2-1.html"><i
+                class="fa fa-arrow-left"></i> KEMBALI KE MATERI
+              SEBELUMNYA</a>
+          </div>
+          <div class="col-sm-6">
+            <a class="btn btn-sm btn-success shadow float-end" href="/pages/materi_2/materi_2-3.html">LANJUT KE MATERI
+              BERIKUTNYA
+              <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <button type="button" class="btn btn-lg rounded-circle" id="btn-back-to-top">
+          <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <footer class="text-center pt-4 pb-4 green text-white">
+    © Muhammad Iman Rizqullah - Human Harmony
+  </footer>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://kit.fontawesome.com/d3968fc237.js" crossorigin="anonymous"></script>
+  <script src="../../assets/javascript/latihan_materi2.js"></script>
+  <script type="module" src="../../assets/javascript/cek-login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="../../assets/javascript/tutorial.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+</body>
+
+</html>

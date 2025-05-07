@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Human Harmony</title>
+  <link rel="icon" href="../../assets/img/icon.png" type="image/gif" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link rel="stylesheet" href="../../assets/css/sidebar.css" />
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark green shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="../../assets/img/icon.png" style="width: 7%; height: 7%" /> Human
+        Harmony</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-3">
+            <a class="nav-link" href="/">Beranda</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" aria-current="page" href="#">Materi</a>
+          </li>
+          <li class="nav-item me-3">
+            <button type="button" class="nav-link green" style="border: none" id="button-keluar">
+              Logout
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="siswa container-fluid mt-3 mb-4">
+    <div class="row">
+      <div class="col-md-3 mb-3 sidebar-siswa">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white green">
+          <span class="fs-5 mb-3">Human Harmony</span>
+          <hr />
+          <ul class="list-unstyled ps-0 scrollarea">
+            <li class="mb-1">
+              <button type="button" class="btn btn-toggle rounded" data-bs-toggle="collapse"
+                data-bs-target="#bab_1-collapse" aria-expanded="true">
+                Sistem Saraf Manusia
+              </button>
+              <div class="collapse" id="bab_1-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a class="link-light rounded" href="/pages/materi_1/materi_1-1.html">Pengenalan sistem saraf
+                      manusia</a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" href="/pages/materi_1/materi_1-2.html">Neuron</a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" href="/pages/materi_1/materi_1-3.html">Sel Neoroglia</a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" href="/pages/materi_1/materi_1-4.html">Saraf Pusat</a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" href="/pages/materi_1/materi_1-5.html">Saraf Tepi</a>
+                  </li>
+                  <li><a class='link-light rounded' href='/pages/materi_1/uji-kompetensi1.html'>
+                      Uji Kompetensi 1</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button type="button" class="btn btn-toggle align-items-center rounded collapsed"
+                data-bs-toggle="collapse" data-bs-target="#bab_2-collapse" aria-expanded="false">
+                Organ Indra Manusia <i id="iconm2" class="p-1 fa fa-1,5x"></i>
+              </button>
+              <div class="collapse show" id="bab_2-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a class="link-light rounded" id="materinext2_11" style="cursor: pointer;">Pendahuluan<i
+                        id="iconm2_11" class="p-1 fa"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" id="materinext2_1" style="cursor: pointer;">Peraba <i id="iconm2_1"
+                        class="p-1 fa"></i></a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" id="materinext2_2" style="cursor: pointer;">Pengecap <i id="iconm2_2"
+                        class="p-1 fa"></i></a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" id="materinext2_3" style="cursor: pointer;">Penciuman <i id="iconm2_3"
+                        class="p-1 fa"></i></a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" id="materinext2_4" style="cursor: pointer;">Penglihatan <i
+                        id="iconm2_4" class="p-1 fa"></i></a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded active" id="materinext2_5" style="cursor: pointer;">Pendengaran <i
+                        id="iconm2_5" class="p-1 fa"></i></a>
+                  </li>
+                  <li><a class='link-light rounded' id="ujikompetensi2" style="cursor: pointer;">
+                      Uji Kompetensi 2 <i id="iconm2_6" class="p-1 fa"></i></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button type="button" class="btn btn-toggle align-items-center rounded collapsed"
+                data-bs-toggle="collapse" data-bs-target="#bab_3-collapse" aria-expanded="false">
+                Sistem Hormon Manusia <i id="iconm3" class="p-1 fa fa-1,5x"></i>
+              </button>
+              <div class="collapse" id="bab_3-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a class="link-light rounded" id="materinext3_11" style="cursor: pointer;">Pendahuluan<i
+                        id="iconm3_11" class="p-1 fa"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="link-light rounded" id="materinext3_1" style="cursor: pointer;">Sifat umum kelenjar
+                      endokrin <i id="iconm3_1" class="p-1 fa"></i></a>
+                    <a class="link-light rounded" id="ujikompetensi3" style="cursor: pointer;">Uji Kompetensi 3 <i
+                        id="iconm3_2" class="p-1 fa"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <a class="btn btn-evaluasi" class="link-light rounded" id="evaluasi" style="cursor: pointer;">Evaluasi
+                akhir <i id="iconevaluasi" class="p-1 fa fa-1,5x"></i></a>
+            </li>
+          </ul>
+          <hr />
+        </div>
+      </div>
+      <div class="col-md-9 materi">
+        <div class="card shadow">
+          <div class="card-body">
+            <h2>Indra Pendengaran</h2>
+
+            <div class="card">
+              <div class="card-header">
+                <b>Tujuan Pembelajaran</b>
+              </div>
+              <div class="card-body">
+                <ol>
+                  <li>
+                    Melalui kegiatan mengamati model atau gambar anatomi telinga manusia, siswa dapat membandingkan
+                    bentuk dan fungsi bagian-bagian telinga luar, tengah, dan dalam dengan tepat.
+                  </li>
+                  <li>
+                    Setelah mengidentifikasi komponen telinga dan jalur penghantaran impuls suara, siswa dapat menilai
+                    peran masing-masing bagian dalam proses pendengaran secara benar.
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <hr />
+            <div class="materi lh-lg ps-4 pe-4">
+              <div class="card">
+                <div class="card-header">
+                  <p class="rata">
+                    Telinga merupakan reseptor untuk gelombang suara sekaligus mengandung reseptor untuk keseimbangan,
+                    sehingga telinga disebut sebagai indra pendengar dan keseimbangan. Telinga manusia terdiri dari tiga
+                    wilayah utama yakni <br>(I) telinga luar, yang mengumpulkan gelombang suara dan menyalurkannya ke
+                    dalam; <br>(2) telinga tengah, yang menyampaikan getaran suara ke jendela oval; dan <br>(3) telinga
+                    dalam, yang menampung reseptor untuk pendengaran dan keseimbangan. <br>Lihat Gambar yang ada
+                    dibawah.
+                  </p>
+                </div>
+              </div>
+              <h5>A. Telinga Luar</h5>
+              <p class="rata">Telinga luar terdiri dari daun telinga (pinnalaurikula), liang telinga (meatus auditorius
+                eksternus), dan selaput gendang (membran tympani). Daun telinga adalah lipatan tulang rawan elastis
+                berbentuk seperti ujung terompet yang melebar dan tertutup oleh kulit. Liang telinga atau saluran
+                pendengaran eksternal berupa tabung melengkung dengan panjang sekitar 2,5 cm yang mengarah ke membran
+                tympani.</p>
+              <div class="row komputer">
+                <div class="col">
+                  <img src="../../assets/img/gambar14.png" class="img-fluid rounded mx-auto d-block mb-4" width="800"
+                    height="800" />
+                </div>
+              </div>
+              <p class="rata">Membran tympani merupakan selaput semitransparan tipis yang terletak diantara telinga luar
+                dan tengah. Membran tympani dapat mengalami kerusakan/robek akibat tekanan dari kapas, trauma, atau
+                infeksi telinga tengah .</p>
+              <p class="rata">Liang telinga dekat daun telinga mengandung beberapa rambut dan kelenjar keringat khusus
+                yang mengeluarkan kotoran telinga (Tortora & Derrickson, 2009). Secara keseluruhan, bagian telinga luar
+                berfungsi menerima dan menyalurkan getaran suara atau gelombang bunyi sehingga menyebabkan bergetarnya
+                membran tympani.</p>
+              <h5>B. Telinga Tengah</h5>
+              <p class="rata">Bagian telinga tengah (kavum tympanikus) adalah suatu rongga kecil dalam tulang pelipis
+                yang berisi tiga keping tulang pendengaran (osikula), yaitu maleus (tulang martil), inkus (tulang
+                landasan), dan stapes (tulang sanggurdi). Ketiganya saling berhubungan melalui persendian. Stapes
+                berhubungan dengan membran pemisah antara telinga tengah dan telinga dalam, yang disebut tingkap jorong
+                (fenestra vestibuli). Di bawah tingkap jorong terdapat tingkap bundar (fenestra kokhlea) yang tertutup
+                oleh membran tympani sekunder.</p>
+              <p class="rata">Telinga tengah berhubungan dengan faring melalui tuba Eustachius, yakni tabung pendengaran
+                yang terdiri dari tulang keras dan rawan elastis. Tuba Eustachius berfungsi menjaga keseimbangan tekanan
+                antara kedua Sisi membran tympani. Selama menelan, menguap, atau gerakan mulut menganga, tuba Eustachius
+                akan terbuka sehingga memungkinkan udara untuk masuk atau keluar dari telinga tengah sampai tekanan di
+                telinga tengah sama dengan tekanan atmosfer. Jika tekanan seimbang, membran tympani dapat bergetar
+                ketika terdapat gelombang suara. Namun, jika tekanan tidak seimbang dapat menyebabkan nyeri hebat,
+                gangguan pendengaran, telinga berdenging, dan vertigo.</p>
+              <p class="rata">Oleh karena itu, jika mendengar suara yang sangat keras (misalnya ledakan bom), hal yang
+                harusnya kita lakukan adalah membuka mulut untuk mencegah kerusakan membran tympani. Ketika mulut
+                terbuka, tuba Eustachius terbuka dan udara akan masuk melalui saluran tersebut ke telinga tengah
+                menghasilkan tekanan yang sama antara permukaan dalam dan permukaan luar membran tympani.</p>
+              <h5>C. Telinga Dalam</h5>
+              <p class="rata">Telinga dalam disebut juga labirin karena rangkaian salurannya yang rumit. Secara
+                struktural terdiri dari dua bagian utama yakni labirin tulang di sebelah luar (tepi) dan labirin membran
+                di sebelah dalam (tengah). Labirin tulang mengandung perilimfe, merupakan cairan yang serupa dengan
+                cairan serebrospinal. Labirin tulang terdiri dari serangkaian saluran yang dibagi menjadi tiga: (1)
+                kanalis semisirkularis dan (2) vestibula, keduanya mengandung reseptor untuk keseimbangan; serta (3)
+                kokhlea, mengandung reseptor untuk mendengar.</p>
+              <p class="rata">Sedangkan labirin membran, terletak di dalam labirin tulang mengandung endolimfe,
+                merupakan cairan yang serupa dengan cairan interseluler. Labirin membran terdiri atas dua kantong, yaitu
+                utrikulus dan sakulus yang dihubungkan Oleh duktus endolimfe.</p>
+              <p class="rata">Kanalis semisirkularis merupakan tiga saluran bertulang Yang terletak di atasbelakang
+                vestibula. Salah satu ujung dari setiap saluran tersebut menggembung disebut ampula. Masing-masing
+                ampula berhubungan dengan utrikulus. Pada ampula terdapat krista akustika sebagai organ indra
+                keseimbangan dinamis, yakni untuk mempertahankan posisi tubuh dalam melakukan respons terhadap Gerakan.
+              </p>
+              <p class="rata">Vestibula terletak di belakang kokhlea dan di depan kanalis semisirkularis. Vestibula
+                bagian membran terdiri dari sakulus dan utrikulus, yang pada keduanya terdapat struktur khusus yang
+                disebut makula akustika sebagai organ indra keseimbangan statis, yakni untuk orientasi tubuh terhadap
+                tarikan gravitasi.</p>
+              <p class="rata">Kokhlea berbentuk seperti rumah siput, berupa saluran berbentuk spiral yang terdiri dari 2
+                3/4 lilitan, mengelilingi bentukan kerucut yang disebut mediolus. Kokhlea dibagi menjadi tiga saluran
+                penyusunnya, antara Iain (1) skala vestibulli (di sebelah atas, mengandung perilimfe, berakhir pada
+                tingkap jorong); (2) skala tympani (di sebelah bawah, mengandung perilimfe, berakhir pada tingkap
+                bulat); dan (3) skala medialduktus kokhlea (terletak diantara skala vestibuli dan skala tympani,
+                mengandung endolimfe).</p>
+              <p class="rata">Skala media dipisahkan dengan skala vestibuli Oleh membran vestibularis (membran Rissner)
+                dan dipisahkan dengan skala tympani oleh membran basilaris. Pada membran basilaris terdapat indra
+                pendengar yaitu organ Corti. Sel reseptor bunyi pada organ Corti berupa sel rambut yang didampingi oleh
+                sel penunjang. Akson-akson dari sel-sel rambut menyusun diri membentuk cabang kokhlear dari saraf
+                vestibulokokhlear (saraf kranial ke VIII), yang menghantarkan impuls saraf ke pusat
+                pendengaran/keseimbangan di otak. Getaran suara dapat sampai pada organ Corti melalui lintasan sebagai
+                berikut: getaran suara memasuki liang telinga —> menekan membran tympani —> melintas melalui
+                tulang-tulang pendengaran —> menekan tingkap jorong —> menimbulkan gelomban pada perilimfe —> menekan
+                membran vestibularis dan skala basilaris —> merangsang sel-sel rambut pada organ Corti.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card latihan mt-3">
+          <h5 class="card-header">
+            Latihan
+            <a class="btn btn-warning text-white ms-2" data-bs-toggle="collapse" href="#collapsePetunjuk1" role="button"
+              aria-expanded="false" aria-controls="collapseExample">
+              <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                data-bs-title="klik untuk membuka/menutup petunjuk">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                Petunjuk Pengerjaan</span>
+            </a>
+          </h5>
+          <div class="card-body">
+            <div class="collapse show" id="collapsePetunjuk1">
+              <div class="card">
+                <h5 class="card-header">
+                  Petunjuk Mengerjakan Latihan
+                </h5>
+                <div class="card-body">
+                  <ol>
+                    <li>
+                      Jawablah soal-soal dibawah ini dengan
+                      mengisikannya pada inputan yang tersedia.
+                    </li>
+                    <li>
+                      Tekan tombol cek jawaban untuk mencek jawaban.
+                    </li>
+                    <li>
+                      Apabila inputan berwana
+                      <b class="text-danger">Merah</b> jawaban salah,
+                      dan apabila berwana
+                      <b class="text-success">Hijau</b> jawaban benar.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <ol>
+              <li>
+                Bagian telinga yang berfungsi menjaga keseimbangan tekanan antara kedua sisi membran tympani?<br />
+                <input type="text" id="answer25_1" class="me-2 mb-2" maxlength="20" size="30" placeholder="...." />
+              </li>
+              <li>
+                Bagian telinga dalam yang berfungsi sebagai reseptor pendengaran?<br />
+                <input type="text" id="answer25_2" class="me-2 mb-2" maxlength="20" size="30" placeholder="...." />
+              </li>
+              <li>
+                Bagian kokhlea yang mengandung endolimfe?<br />
+                <input type="text" id="answer25_3" class="me-2 mb-2" maxlength="20" size="30" placeholder="...." />
+              </li>
+              <li>
+                Nama lain dari telinga dalam karena strukturnya yang rumit?<br />
+                <input type="text" id="answer25_4" class="me-2 mb-2" maxlength="20" size="30" placeholder="...." />
+              </li>
+              <li>
+                Cairan dalam labirin tulang yang serupa dengan cairan serebrospinal?<br />
+                <input type="text" id="answer25_5" class="me-2 mb-2" maxlength="20" size="30" placeholder="...." />
+              </li>
+              <div id="hasil25"></div>
+            </ol>
+            <button type="button" onclick="cekJawaban25()" class="btn btn-sm btn-outline-primary">
+              Cek Jawaban
+            </button>
+            <button type="button" onclick="ulangJawaban25()" class="btn btn-sm btn-outline-danger">
+              Ulangi
+            </button>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-6">
+            <a class="btn btn-sm btn-outline-secondary shadow" href="/pages/materi_2/materi_2-4.html"><i
+                class="fa fa-arrow-left"></i> KEMBALI KE MATERI
+              SEBELUMNYA</a>
+          </div>
+          <div class="col-sm-6">
+            <a class="btn btn-sm btn-success shadow float-end" href="/pages/materi_2/uji-kompetensi2.html">LANJUT KE
+              MATERI BERIKUTNYA
+              <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <button type="button" class="btn btn-lg rounded-circle" id="btn-back-to-top">
+          <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <footer class="text-center pt-4 pb-4 green text-white">
+    © Muhammad Iman Rizqullah - Human Harmony
+  </footer>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://kit.fontawesome.com/d3968fc237.js" crossorigin="anonymous"></script>
+  <script src="../../assets/javascript/latihan_materi2.js"></script>
+  <script type="module" src="../../assets/javascript/cek-login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="../../assets/javascript/tutorial.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from basicprogrammingcpp.netlify.app/pages/halaman_guru/aturkkm by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Jan 2025 13:35:08 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=UTF-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Human Harmony</title>
+    <link rel="icon" href="../../assets/img/icon.PNG" type="image/gif" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.datatables.net/1.13.3/css/dataTables.bootstrap5.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/sidebar.css" />
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark green shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="../../assets/img/icon.png" style="width: 7%; height: 7%" />
+          Human Harmony</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-3">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item me-3">
+              <a
+                class="nav-link active"
+                href="https://basicprogrammingcpp.netlify.app/pages/pages/halaman_guru/dashboard-guru.html"
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="tentang.html">Tentang</a>
+            </li>
+            <li class="nav-item me-3">
+              <button
+                type="button"
+                class="nav-link green"
+                style="border: none"
+                id="button-keluar"
+              >
+                Logout
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid mt-3 mb-4">
+      <div class="row">
+        <div class="col-md-3 mb-3 sidebar">
+          <div
+            class="sidebar-guru d-flex flex-column flex-shrink-0 p-3 text-white green"
+          >
+            <span class="fs-5 mb-3">Sistem Koordinasi Manusia</span>
+            <hr />
+            <ul class="sidebar-nav nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                <a
+                  class="side-nav nav-link link-light p-3"
+                  href="dashboard-guru.html"
+                >
+                  <i class="fa fa-users me-2" aria-hidden="true"></i>
+                  Data Siswa
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="side-nav nav-link link-light p-3"
+                  href="hasilbelajar.html"
+                >
+                  <i class="fa fa-list-alt me-2" aria-hidden="true"></i>
+                  Hasil Belajar
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="side-nav nav-link link-light p-3"
+                  href="datakelas.html"
+                >
+                  <i class="fa fa-address-card" aria-hidden="true"></i>
+                  Data Kelas
+                </a>
+              </li>
+              <li>
+                <a href="#" class="side-nav nav-link p-3 active">
+                  <i class="fa fa-pencil-square-o me-2" aria-hidden="true"></i>
+                  Atur KKM
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9 dashboard">
+          <div class="card shadow">
+            <div class="card-body dashboard">
+              <h4 class="mb-2 mt-3">
+                Atur KKM Uji Kompetensi
+                <hr />
+              </h4>
+              <table class="table table-striped" id="tabelkkm">
+                <thead>
+                  <tr>
+                    <th class="ps-4">No.</th>
+                    <th class="text-center">Atur KKM Uji Kompetensi</th>
+                    <th>KKM saat ini</th>
+                    <th class="text-center">Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="ps-4">1</td>
+                    <td class="text-center">Uji Kompetensi 1</td>
+                    <td class="ps-5" id="uji1"></td>
+                    <td class="text-center">
+                      <button
+                        class="btn btn-primary"
+                        type="submit"
+                        data-bs-toggle="modal"
+                        data-bs-target="#aturkkm1"
+                      >
+                        Edit
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="ps-4">2</td>
+                    <td class="text-center">Uji Kompetensi 2</td>
+                    <td class="ps-5" id="uji2"></td>
+                    <td class="text-center">
+                      <button
+                        class="btn btn-primary"
+                        type="submit"
+                        data-bs-toggle="modal"
+                        data-bs-target="#aturkkm2"
+                      >
+                        Edit
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="ps-4">3</td>
+                    <td class="text-center">Uji Kompetensi 3</td>
+                    <td class="ps-5" id="uji3"></td>
+                    <td class="text-center">
+                      <button
+                        class="btn btn-primary"
+                        type="submit"
+                        data-bs-toggle="modal"
+                        data-bs-target="#aturkkm3"
+                      >
+                        Edit
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="ps-4">4</td>
+                    <td class="text-center">Uji Kompetensi Akhir</td>
+                    <td class="ps-5" id="ujiAkhir"></td>
+                    <td class="text-center">
+                      <button
+                        class="btn btn-primary"
+                        type="submit"
+                        data-bs-toggle="modal"
+                        data-bs-target="#aturkkmAkhir"
+                      >
+                        Edit
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div
+          class="aturkkm modal fade"
+          id="aturkkm1"
+          tabindex="-1"
+          aria-labelledby="aturkkmModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="text-center modal-title" id="aturkkmModalLabel">
+                  Atur KKM Uji Kompetensi 1
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div id="kkmuji1" class="form-floating mb-3"></div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  class="w-100 btn btn-lg"
+                  type="submit"
+                  id="button-aturkkm1"
+                >
+                  Simpan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="aturkkm modal fade"
+          id="aturkkm2"
+          tabindex="-1"
+          aria-labelledby="aturkkmModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="text-center modal-title" id="aturkkmModalLabel">
+                  Atur KKM Uji Kompetensi 2
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div id="kkmuji2" class="form-floating mb-3"></div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  class="w-100 btn btn-lg"
+                  type="submit"
+                  id="button-aturkkm2"
+                >
+                  Simpan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="aturkkm modal fade"
+          id="aturkkm3"
+          tabindex="-1"
+          aria-labelledby="aturkkmModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="text-center modal-title" id="aturkkmModalLabel">
+                  Atur KKM Uji Kompetensi 3
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div id="kkmuji3" class="form-floating mb-3"></div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  class="w-100 btn btn-lg"
+                  type="submit"
+                  id="button-aturkkm3"
+                >
+                  Simpan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="aturkkm modal fade"
+          id="aturkkmAkhir"
+          tabindex="-1"
+          aria-labelledby="aturkkmModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="text-center modal-title" id="aturkkmModalLabel">
+                  Atur KKM Uji Kompetensi Akhir
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div id="kkmujiAkhir" class="form-floating mb-3"></div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  class="w-100 btn btn-lg"
+                  type="submit"
+                  id="button-aturkkmAkhir"
+                >
+                  Simpan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center pt-4 pb-4 green text-white">
+      @Muhammad Iman Rizqullah - HumanHarmony
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.3/js/dataTables.bootstrap5.min.js"></script>
+    <script type="module" src="../../assets/javascript/kkm.js"></script>
+
+    <script
+      type="module"
+      src="../../assets/javascript/tambah-kelas.js"
+    ></script>
+    <script type="module" src="../../assets/javascript/cek-login.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+
+  <!-- Mirrored from basicprogrammingcpp.netlify.app/pages/halaman_guru/aturkkm by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Jan 2025 13:35:20 GMT -->
+</html>
