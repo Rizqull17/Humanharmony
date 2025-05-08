@@ -36,7 +36,7 @@ mulai.addEventListener("click", function () {
   const uji1 = document.getElementById("uji1");
   uji1.hidden = false;
   let showTime = document.getElementById("waktu");
-  let startMinutes = 60;
+  let startMinutes = 40;
   let seconds = 0;
 
   function countdown() {
@@ -74,29 +74,34 @@ onValue(ref(db, "Soal"), (snapshot) => {
   <div class="div-soal ${tampilanSoal}">
     <div class="card">
     <h6 class="card-header">Nomor ${i}</h6>
-    <div class="card-body text-soal">${data[`evaluasi`][`evaluasi-${i}`]["text-soal"]
-      }</div>
+    <div class="card-body text-soal">${
+      data[`evaluasi`][`evaluasi-${i}`]["text-soal"]
+    }</div>
     </div>
     <div class="card my-3 card-body jawaban">
     <label for="${i}a" class="label-${i}  " >
       <input class="pilihan pilihan-${i}" type="radio" id="${i}a" name="no${i}" value="a" />
-      <span class="ms-3 pilihan-jawaban pilihan-jawaban-${i}">a. ${data[`evaluasi`][`evaluasi-${i}`].a
-      }</span>
+      <span class="ms-3 pilihan-jawaban pilihan-jawaban-${i}">a. ${
+      data[`evaluasi`][`evaluasi-${i}`].a
+    }</span>
     </label><br>
     <label for="${i}b" class="label-${i}  ">
       <input class="pilihan pilihan-${i}" type="radio" id="${i}b" name="no${i}" value="b" />
-      <span class="ms-3 pilihan-jawaban pilihan-jawaban-${i}">b. ${data[`evaluasi`][`evaluasi-${i}`].b
-      }</span>
+      <span class="ms-3 pilihan-jawaban pilihan-jawaban-${i}">b. ${
+      data[`evaluasi`][`evaluasi-${i}`].b
+    }</span>
     </label><br>
     <label for="${i}c" class="label-${i}  ">
       <input class="pilihan pilihan-${i}" type="radio" id="${i}c" name="no${i}" value="c" />
-      <span class="ms-3 pilihan-jawaban pilihan-jawaban-${i}">c. ${data[`evaluasi`][`evaluasi-${i}`].c
-      }</span>
+      <span class="ms-3 pilihan-jawaban pilihan-jawaban-${i}">c. ${
+      data[`evaluasi`][`evaluasi-${i}`].c
+    }</span>
     </label><br>
     <label for="${i}d" class="label-${i}  ">
       <input class="pilihan pilihan-${i}" type="radio" id="${i}d" name="no${i}" value="d" />
-      <span class="ms-3 pilihan-jawaban pilihan-jawaban-${i}">d. ${data[`evaluasi`][`evaluasi-${i}`].d
-      }</span>
+      <span class="ms-3 pilihan-jawaban pilihan-jawaban-${i}">d. ${
+      data[`evaluasi`][`evaluasi-${i}`].d
+    }</span>
     </label>
     </div>
   </div>
