@@ -60,8 +60,6 @@ onValue(ref(db, "Soal/kkm"), (snapshot) => {
           showConfirmButton: true, // optional
           confirmButtonColor: "#16a085",
           confirmButtonText: "OK",
-
-          //closeOnConfirm: false -  doesn't exist
         });
         $("#aturkkm1").modal("hide");
       })
@@ -74,8 +72,6 @@ onValue(ref(db, "Soal/kkm"), (snapshot) => {
           showConfirmButton: true, // optional
           confirmButtonColor: "#16a085",
           confirmButtonText: "OK",
-
-          //closeOnConfirm: false -  doesn't exist
         });
       });
   });

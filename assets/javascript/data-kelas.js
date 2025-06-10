@@ -186,10 +186,7 @@ onValue(ref(db, "users/"), (snapshot) => {
           showConfirmButton: true, // optional
           confirmButtonColor: "#16a085",
           confirmButtonText: "OK",
-
-          //closeOnConfirm: false -  doesn't exist
         });
-        // alert("Kelas yang ingin ditambahkan belum dimasukan!");
         return;
       }
       set(ref(db, "kelas/" + tambahkelas), {
@@ -206,10 +203,8 @@ onValue(ref(db, "users/"), (snapshot) => {
             showConfirmButton: true, // optional
             confirmButtonColor: "#16a085",
             confirmButtonText: "OK",
-  
-            //closeOnConfirm: false -  doesn't exist
           });
-          // alert("Kelas berhasil ditambahkan!");
+
           $("#modaltambahkelas").modal("hide");
         })
         .catch((error) => {
@@ -221,7 +216,7 @@ onValue(ref(db, "users/"), (snapshot) => {
             showConfirmButton: true, // optional
             confirmButtonColor: "#16a085",
             confirmButtonText: "OK",
-  
+
             //closeOnConfirm: false -  doesn't exist
           });
           // alert("Kelas gagal ditambahkan!");

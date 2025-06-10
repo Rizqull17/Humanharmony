@@ -85,11 +85,11 @@ $("document").ready(function () {
       // console.log(i);
     }
   });
-  //hapus data data
+  //hapus data siswa
   $("#tabelSiswa").on("click", ".delete", function () {
     Swal.fire({
       title: "Apakah kamu yakin?",
-      text: "Data yang dihapus tidak bisa dikembalikan!",
+      text: "Data siswa yang dihapus tidak bisa dikembalikan!",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",

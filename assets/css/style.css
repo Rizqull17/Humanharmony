@@ -7,6 +7,18 @@
   border-bottom: 1px solid #ffffff;
 }
 
+.isiscroll {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* font-family: candara; */
+  font-size: 17px;
+  line-height: 1.5;
+  text-align: justify;
+  float: left;
+  color: black;
+}
+
 .drop1 {
   width: 200px;
   height: 50px;
@@ -117,6 +129,8 @@
 .rata {
   text-align: justify;
   text-indent: 2rem;
+  font-size: 18px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .justify {

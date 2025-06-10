@@ -55,18 +55,35 @@ onAuthStateChanged(auth, (user) => {
           signOut(auth)
             .then(() => {
               Swal.fire({
-                icon: "success",
-                title: "Berhasil Keluar",
+                icon: "warning",
+                title: "Apakah anda yakin ingin keluar?",
                 //type: "warning", -  doesn't exist
+                showCancelButton: true,
                 showCloseButton: true, // optional
                 showConfirmButton: true, // optional
                 confirmButtonColor: "#16a085",
-                confirmButtonText: "OK",
+                confirmButtonText: "Iya",
+                cancelButtonColor: "#d33",
+                cancelButtonText: "Batal",
 
                 //closeOnConfirm: false -  doesn't exist
               }).then((result) => {
                 if (result.isConfirmed) {
-                  document.location.href = "../../index.html";
+                  Swal.fire({
+                    icon: "success",
+                    title: "Berhasil Keluar",
+                    //type: "warning", -  doesn't exist
+                    showCloseButton: true, // optional
+                    showConfirmButton: true, // optional
+                    confirmButtonColor: "#16a085",
+                    confirmButtonText: "OK",
+
+                    //closeOnConfirm: false -  doesn't exist
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                      document.location.href = "../../index.html";
+                    }
+                  });
                 }
               });
             })
@@ -100,18 +117,35 @@ onAuthStateChanged(auth, (user) => {
         btnKeluar.addEventListener("click", () => {
           signOut(auth).then(() => {
             Swal.fire({
-              icon: "success",
-              title: "Berhasil Keluar",
+              icon: "warning",
+              title: "Apakah anda yakin ingin keluar?",
               //type: "warning", -  doesn't exist
+              showCancelButton: true,
               showCloseButton: true, // optional
               showConfirmButton: true, // optional
               confirmButtonColor: "#16a085",
-              confirmButtonText: "OK",
+              confirmButtonText: "Iya",
+              cancelButtonColor: "#d33",
+              cancelButtonText: "Batal",
 
               //closeOnConfirm: false -  doesn't exist
             }).then((result) => {
               if (result.isConfirmed) {
-                document.location.href = "../../index.html";
+                Swal.fire({
+                  icon: "success",
+                  title: "Berhasil Keluar",
+                  //type: "warning", -  doesn't exist
+                  showCloseButton: true, // optional
+                  showConfirmButton: true, // optional
+                  confirmButtonColor: "#16a085",
+                  confirmButtonText: "OK",
+
+                  //closeOnConfirm: false -  doesn't exist
+                }).then((result) => {
+                  if (result.isConfirmed) {
+                    document.location.href = "../../index.html";
+                  }
+                });
               }
             });
           });
@@ -137,18 +171,35 @@ onAuthStateChanged(auth, (user) => {
         btnKeluar.addEventListener("click", () => {
           signOut(auth).then(() => {
             Swal.fire({
-              icon: "success",
-              title: "Berhasil Keluar",
+              icon: "warning",
+              title: "Apakah anda yakin ingin keluar?",
               //type: "warning", -  doesn't exist
+              showCancelButton: true,
               showCloseButton: true, // optional
               showConfirmButton: true, // optional
               confirmButtonColor: "#16a085",
-              confirmButtonText: "OK",
+              confirmButtonText: "Iya",
+              cancelButtonColor: "#d33",
+              cancelButtonText: "Batal",
 
               //closeOnConfirm: false -  doesn't exist
             }).then((result) => {
               if (result.isConfirmed) {
-                document.location.href = "../../index.html";
+                Swal.fire({
+                  icon: "success",
+                  title: "Berhasil Keluar",
+                  //type: "warning", -  doesn't exist
+                  showCloseButton: true, // optional
+                  showConfirmButton: true, // optional
+                  confirmButtonColor: "#16a085",
+                  confirmButtonText: "OK",
+
+                  //closeOnConfirm: false -  doesn't exist
+                }).then((result) => {
+                  if (result.isConfirmed) {
+                    document.location.href = "../../index.html";
+                  }
+                });
               }
             });
           });
