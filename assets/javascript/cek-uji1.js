@@ -224,9 +224,6 @@ onValue(ref(db, "Soal"), (snapshot) => {
           }
         }
       }
-      // } else {
-      //   console.log("No data available");
-      // }
       update(ref(db, `users/` + userId + `/uji1`), {
         skor: benar * 10,
         benar: benar,
